@@ -1,16 +1,229 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Careers</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <div class="shell">
+        <section class="intro">
 
+          <div class="intro-copy">
+            <p class="eyebrow">Join our team</p>
+            <h1>Do your best work with us.</h1>
+            <p class="lede">
+              We’re building a small, thoughtful team of people who care about
+              the details and the bigger picture.
+            </p>
+          </div>
 
-<head>
-    <link rel="stylesheet" href="css/styles.css">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luchianno Mascarino</title>
-</head>
-<body>
-    
-</body>
-<footer>
-    
-</footer>
+        </section>
+
+        <section class="form-panel">
+          <form class="application-form" action="#" method="post">
+            <header class="form-header">
+              <div>
+                <h2>Apply to Northstar</h2>
+              </div>
+            </header>
+
+            <div class="form-grid">
+              <label class="field">
+                <span>Your name</span>
+                <input
+                  type="text"
+                  name="name"
+                  autocomplete="name"
+                  placeholder="Jane Smith"
+                  required
+                />
+              </label>
+
+              <label class="field">
+                <span>Email address</span>
+                <input
+                  type="email"
+                  name="email"
+                  autocomplete="Email"
+                
+                  placeholder="jane@email.com"
+                  required
+                />
+              </label>
+
+              <label class="field">
+                <span>Phone number</span>
+                <input
+                  type="tel"
+                  name="phone"
+                  autocomplete="tel"
+                  placeholder="00000000"
+                  pattern="[0-9]{8}"
+                  required
+                />
+              </label>
+
+              <label class="field">
+                <span>Role</span>
+                <select name="role" required>
+                  <option value="" selected disabled>Select a position</option>
+                  <option>Senior Product Designer</option>
+                  <option>Frontend Engineer</option>
+                  <option>Brand Strategist</option>
+                  <option>Project Manager</option>
+                  <option>General application</option>
+                </select>
+              </label>
+
+              <label class="field">
+                <span>LinkedIn profile</span>
+                <input
+                  type="url"
+                  name="linkedin"
+                  placeholder="https://linkedin.com/in/yourname"
+                  required
+                />
+              </label>
+
+              <label class="field">
+                <span>Portfolio or website</span>
+                <input
+                  type="url"
+                  name="portfolio"
+                  placeholder="https://yourportfolio.com"
+                  required
+                />
+              </label>
+
+              <fieldset class="full-width">
+                <legend>Preferred work arrangement</legend>
+                <div class="radio-grid">
+                  <label class="choice-pill">
+                    <input
+                      type="radio"
+                      name="work-arrangement"
+                      value="remote"
+                      required
+                    />
+                    <span>Remote</span>
+                  </label>
+                  <label class="choice-pill">
+                    <input
+                      type="radio"
+                      name="work-arrangement"
+                      value="hybrid"
+                    />
+                    <span>Hybrid</span>
+                  </label>
+                  <label class="choice-pill">
+                    <input
+                      type="radio"
+                      name="work-arrangement"
+                      value="on-site"
+                    />
+                    <span>On-site</span>
+                  </label>
+                </div>
+              </fieldset>
+
+              <fieldset class="full-width">
+                <legend>Areas of expertise</legend>
+                <p class="field-hint">Select all that apply</p>
+                <div class="checkbox-grid">
+                  <label class="check-card">
+                    <input type="checkbox" name="expertise" value="strategy" />
+                    <span class="check-mark" aria-hidden="true"></span>
+                    <span>Strategy</span>
+                  </label>
+                  <label class="check-card">
+                    <input type="checkbox" name="expertise" value="research" />
+                    <span class="check-mark" aria-hidden="true"></span>
+                    <span>Research</span>
+                  </label>
+                  <label class="check-card">
+                    <input type="checkbox" name="expertise" value="design" />
+                    <span class="check-mark" aria-hidden="true"></span>
+                    <span>Design</span>
+                  </label>
+                  <label class="check-card">
+                    <input
+                      type="checkbox"
+                      name="expertise"
+                      value="engineering"
+                    />
+                    <span class="check-mark" aria-hidden="true"></span>
+                    <span>Engineering</span>
+                  </label>
+                </div>
+              </fieldset>
+
+              <label class="range-field full-width">
+                <span>Years of relevant experience</span>
+                <input
+                  type="range"
+                  name="experience"
+                  min="0"
+                  max="15"
+                  value="5"
+                />
+                <span class="range-labels" aria-hidden="true">
+                  <small>1</small>
+                  <small>15+ years</small>
+                </span>
+              </label>
+
+              <label class="field">
+                <span>Available start date</span>
+                <input type="date" name="start-date" required />
+              </label>
+
+              <label class="field">
+                <span>Preferred interview date</span>
+                <input type="date" name="interview-date" required />
+              </label>
+
+              <label class="upload-field full-width">
+                <span class="label-title">Résumé</span>
+                <span class="upload-box">
+                  <span class="upload-copy">
+                    Upload your résumé
+                    <small>PDF or DOC</small>
+                  </span>
+                  <span class="file-button">Choose file</span>
+                </span>
+                <input
+                  class="visually-hidden"
+                  type="file"
+                  name="resume"
+                  accept=".pdf,.doc,.docx"
+                  required
+                />
+              </label>
+
+              <label class="field full-width">
+                <span>Why would you like to join us?</span>
+                <textarea
+                  name="motivation"
+                  rows="3"
+                  placeholder="Tell us what excites you about this role and the perspective you’d bring..."
+                  required
+                ></textarea>
+              </label>
+            </div>
+
+            <footer class="form-footer">
+           
+              <button type="submit">
+                Submit application
+                <span aria-hidden="true">&rarr;</span>
+              </button>
+            </footer>
+          </form>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
