@@ -95,6 +95,12 @@ label {
   padding: 5rem 0;
 }
 
+.plain-link {
+  color: #c8df70;
+  text-decoration: none;
+  
+}
+
 .eyebrow,
 .form-kicker {
   margin: 0 0 1.25rem;
