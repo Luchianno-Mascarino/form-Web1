@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Careers</title>
+    <title>Job</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -15,8 +15,7 @@
             <p class="eyebrow">Join our team</p>
             <h1>Do your best work with us.</h1>
             <p class="lede">
-              We’re building a small, thoughtful team of people who care about
-              the details and the bigger picture.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quia adipisci exercitationem veritatis voluptates pariatur necessitatibus quibusdam beatae quo excepturi doloribus consequatur ex non obcaecati, nesciunt dicta eaque. Ad, doloremque.
             </p>
           </div>
 
@@ -26,7 +25,7 @@
           <form class="application-form" action="#" method="post">
             <header class="form-header">
               <div>
-                <h2>Apply to Northstar</h2>
+                <h2>Apply to our company</h2>
               </div>
             </header>
 
@@ -185,23 +184,25 @@
                 <input type="date" name="interview-date" required />
               </label>
 
-              <label class="upload-field full-width">
-                <span class="label-title">Résumé</span>
-                <span class="upload-box">
-                  <span class="upload-copy">
-                    Upload your résumé
-                    <small>PDF or DOC</small>
-                  </span>
-                  <span class="file-button">Choose file</span>
-                </span>
-                <input
-                  class="visually-hidden"
-                  type="file"
-                  name="resume"
-                  accept=".pdf,.doc,.docx"
-                  required
-                />
-              </label>
+                <div class="upload-field full-width">
+                    <label for="resume" class="label-title">Résumé</label>
+                    <label class="upload-box" for="resume">
+                        <span class="upload-copy">
+                        <span class="default-msg">Upload your résumé</span>
+                        <span class="success-msg">✓ File attached and ready</span>
+                        <small>PDF or DOC</small>
+                        </span>
+                        <span class="file-button">Choose file</span>
+                    </label>
+                    <input
+                        class="visually-hidden"
+                        type="file"
+                        id="resume"
+                        name="resume"
+                        accept=".pdf,.doc,.docx"
+                        required
+                    />
+                </div>
 
               <label class="field full-width">
                 <span>Why would you like to join us?</span>

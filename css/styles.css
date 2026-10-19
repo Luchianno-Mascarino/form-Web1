@@ -1,20 +1,3 @@
-.container{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.card {
-  max-width: 1100px;
-  margin: 20px auto;
-  background-color: #222;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.5);
-}
-
 :root {
   color: #17231d;
   background: #f2f0e9;
@@ -64,6 +47,19 @@ label {
   box-shadow: 0 24px 80px rgba(24, 39, 30, 0.08);
 }
 
+.shell-sub {
+  display: wrap;
+ 
+  max-width: 1500px;
+  min-height: calc(100vh - 3.5rem);
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 1.75rem;
+  background: #fcfbf7;
+  box-shadow: 0 24px 80px rgba(24, 39, 30, 0.08);
+}
+
+
 .intro {
   position: relative;
   display: flex;
@@ -77,6 +73,22 @@ label {
 }
 
 .intro-copy {
+  position: relative;
+  z-index: 1;
+  max-width: 35rem;
+  padding: 5rem 0;
+}
+
+.intro-sub {
+ 
+  min-width: 0;
+  overflow: hidden;
+  padding: 3.5rem;
+  color: #f6f4ed;
+  background: #1c3429;
+}
+
+.intro-copy-sub {
   position: relative;
   z-index: 1;
   max-width: 35rem;
@@ -384,6 +396,34 @@ legend,
   margin-top: 0.25rem;
   color: #9aa19b;
   font-size: 0.75rem;
+}
+
+
+.upload-box .success-msg {
+  display: none;
+  font-weight: 600;
+  color: #1c3429;
+}
+
+
+.upload-field:has(input[type="file"]:valid) .upload-box {
+  border-style: solid;
+  border-color: #8ca04a;
+  background-color: #f4f7ee;
+}
+
+
+.upload-field:has(input[type="file"]:valid) .default-msg {
+  display: none;
+}
+
+.upload-field:has(input[type="file"]:valid) .success-msg {
+  display: block;
+}
+
+.upload-field:has(input[type="file"]:valid) .file-button {
+  background: #1c3429;
+  color: #ffffff;
 }
 
 .file-button {
